@@ -1,3 +1,5 @@
+import numpy as np
+
 def search(model, src_input, k=1, sequence_max_len=25):
     # (log(1), initialize_of_zeros)
     k_beam = [(0, [0]*(sequence_max_len+1))]
